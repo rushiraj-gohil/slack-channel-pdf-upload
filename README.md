@@ -1,84 +1,93 @@
-🚀 Assignment: Sending a Document to a Slack Channel via Slack APIs
+# 🚀 Assignment: *Sending a Document to a Slack Channel via Slack APIs*
 
-This repository contains the solution for the assignment “Sending a Document to a Slack Channel via Slack APIs.”
-The goal was to research, understand, and implement Slack’s APIs to upload a specified document (a resume in PDF format) to a designated Slack channel.
+This repository contains the solution for the assignment **“Sending a Document to a Slack Channel via Slack APIs.”**  
+The objective is to **research, understand, and implement Slack’s APIs** to upload a specified document *(a resume in PDF format)* to a designated Slack channel.
 
-✨ Key Technical Details
-🔧 API Implementation
+---
 
-Uses the official Slack Python SDK (slack-sdk)
- for a robust and simplified API interaction.
+## ✨ Key Technical Details
 
-📡 API Methods
+### 🔧 API Implementation
 
-conversations_join: Ensures the bot joins the target channel before uploading.
+- Utilizes the official [Slack Python SDK (`slack-sdk`)](https://pypi.org/project/slack-sdk/) for robust and streamlined API interaction.
 
-files_upload_v2: Performs file upload and sharing as a single atomic operation (modern and recommended approach).
+### 📡 API Methods
 
-⚙️ Robustness
+- `conversations_join` &rarr; Ensures the bot is present in the target channel.
+- `files_upload_v2` &rarr; Uploads and shares the file in a *single, atomic operation* (modern and recommended method).
 
-Integrated logging and error handling (SlackApiError) for clean output and effective debugging.
+### ⚙️ Robustness
 
-🔐 Authentication
+- Implements detailed **logging** and structured **error handling** using `SlackApiError` for clean output and efficient debugging.
 
-The script securely uses the provided Slack API Token.
+### 🔐 Authentication
 
-🛠️ Local Setup and Execution
+- Script is structured to securely handle and use the provided **Slack API Token**.
+
+---
+
+## 🛠️ Local Setup & Execution
 
 Follow these steps to run the solution locally:
 
-✅ Prerequisites
+### ✅ Prerequisites
 
-Python 3.x
+- **Python 3.x**
+- **Slack API Token** (provided via email for this assignment)
+- **Resume Document:** `Rushiraj_Gohil_Resume_1810.pdf` placed in the project’s root directory
 
-Slack API Token (provided via email for this assignment)
+### 1️⃣ Clone the Repository
 
-Resume PDF named Rushiraj_Gohil_Resume_1810.pdf placed in the project root directory
-
-1. Clone the Repository
+```bash
 git clone <repository_url>
 cd slack-file-upload-assignment
+```
 
-2. Install Dependencies
+### 2️⃣ Install Dependencies
 
-Install the required Python packages (core dependency: Slack SDK):
+Install required Python packages (the key dependency is the official Slack SDK):
 
+```bash
 pip install -r requirements.txt
+```
 
-3. Configuration
+### 3️⃣ Configuration
 
-Open slack_upload.py and replace the placeholder with your assigned Slack token:
+Edit the configuration section in `slack_upload.py` and replace the placeholder with your Slack token:
 
+```python
 # ====== CONFIGURATION ======
 SLACK_TOKEN = "<SLACK TOKEN HERE>"  # <-- REPLACE THIS
 CHANNEL_ID = "C093LUWB19B"
 # ...
+```
 
-4. Execution
+### 4️⃣ Run the Script
 
-Run the main script:
+Execute the main Python script:
 
+```bash
 python slack_upload.py
+```
 
+Upon successful execution, you’ll see **confirmation logs** and a **success message** in your console.
 
-If successful, you’ll see confirmation logs and a success message in the console.
+---
 
-💡 Self-Correction & Robustness (Powerful Move)
+## 💡 Self-Correction & Robustness
 
-To ensure 100% functionality and avoid any issues before using official credentials, an isolated testing workflow was implemented:
+To guarantee *100% functionality* and preemptively catch issues before using official credentials, an **isolated testing workflow** was followed:
 
-🧪 Isolated Test Environment
+### 🧪 1. Isolated Test Environment
 
-Created a personal 30-day Slack trial workspace
+- Created a **personal 30-day Slack trial workspace**
+- Set up a **dedicated Slack Bot App** for controlled testing
 
-Set up a dedicated Slack Bot App for experimentation
+### 🔑 2. Permission Validation
 
-🔑 Permission Validation
+- Verified and configured all necessary **OAuth scopes** and **bot permissions**
 
-Verified and configured all required OAuth scopes and permissions for the bot app
+### 🧰 3. Debugging & End-to-End Testing
 
-🧰 Debugging & Testing
-
-Fully tested and debugged the script using a separate test token and channel
-
-Validated end-to-end functionality prior to submission
+- Thoroughly ran, debugged, and validated the entire script using a **test token and channel**
+- Confirmed full functionality before connecting to the official workspace.
