@@ -33,8 +33,8 @@ Follow these steps to run the solution locally:
 ### ✅ Prerequisites
 
 - **Python 3.x**
-- **Slack API Token** (provided via email for this assignment)
-- **Resume Document:** `Rushiraj_Gohil_Resume_1810.pdf` placed in the project’s root directory
+- **Slack API Token**
+- **PDF Document:** `Rushiraj_Gohil_Resume_1810.pdf` placed in the project’s root directory
 
 ### 1️⃣ Clone the Repository
 
@@ -58,7 +58,7 @@ Edit the configuration section in `slack_upload.py` and replace the placeholder 
 ```python
 # ====== CONFIGURATION ======
 SLACK_TOKEN = "<SLACK TOKEN HERE>"  # <-- REPLACE THIS
-CHANNEL_ID = "C093LUWB19B"
+CHANNEL_ID = "<CHANNEL ID HERE>" # <-- REPLACE THIS
 # ...
 ```
 
