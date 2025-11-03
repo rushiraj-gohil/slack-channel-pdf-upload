@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 # ====== CONFIGURATION ======
 SLACK_TOKEN = "<SLACK TOKEN HERE>"
-CHANNEL_ID = "C093LUWB19B"
+CHANNEL_ID = "<CHANNEL ID HERE>"
 PDF_PATH = "Rushiraj_Gohil_Resume_1810.pdf"
 MESSAGE_TEXT = "Hey team! This is Rushiraj Gohil, sending his resume via slack_sdk for the assignment for the post of APM - Bengaluru"
 # ============================
