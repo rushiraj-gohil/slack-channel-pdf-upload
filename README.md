@@ -1,6 +1,6 @@
 ### 🚀 Assignment: Sending a Document to a Slack Channel via Slack APIs
 
-[cite\_start]This repository contains the solution for the assignment: **"Sending a Document to a Slack Channel via Slack APIs"**[cite: 1]. [cite\_start]The objective was to research, understand, and implement Slack's REST APIs to upload a specified document (a resume in PDF format) to a designated Slack channel[cite: 2, 3, 5, 7].
+This repository contains the solution for the assignment: **"Sending a Document to a Slack Channel via Slack APIs"**. The objective was to research, understand, and implement Slack's REST APIs to upload a specified document (in PDF format) to a designated Slack channel.
 
 -----
 
@@ -42,8 +42,8 @@ pip install -r requirements.txt
 
 The script requires the **Slack Token** and the **Channel ID** to be passed, either as environment variables or by editing the placeholder variables in `slack_upload.py`.
 
-  * [cite\_start]**Designated Channel ID:** `C093LUWB19B` [cite: 9]
-  * [cite\_start]**Document Path:** `./Rushiraj_Gohil_Resume_1810.pdf` [cite: 10]
+  * **Designated Channel ID:** `C093LUWB19B`
+  * **Document Path:** `./Rushiraj_Gohil_Resume_1810.pdf`
 
 The `slack_upload.py` script executes the API call to upload the file to the channel.
 
