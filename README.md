@@ -1,4 +1,4 @@
-#  Assignment: *Sending a Document to a Slack Channel via Slack APIs*
+#  Assignment: *Sending a Document to a Slack Channel via Slack API*
 
 This repository contains the solution for the assignment **“Sending a Document to a Slack Channel via Slack APIs.”**  
 The objective is to **research, understand, and implement Slack’s APIs** to upload a specified document *(a resume in PDF format)* to a designated Slack channel.
