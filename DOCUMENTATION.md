@@ -1,7 +1,4 @@
-# 📄 Technical Documentation: Slack File Upload Assignment
-
-**Candidate:** Rushiraj Gohil  
-**Assignment Objective:** Demonstrate the ability to research, understand, and implement Slack's REST APIs to perform a practical task: sending a document to a specified Slack channel (`C093LUWB19B`).
+#  Technical Documentation: Slack File Upload Assignment
 
 ---
 
