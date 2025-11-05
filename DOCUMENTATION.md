@@ -1,6 +1,5 @@
 #  Technical Documentation: Slack File Upload Assignment
 
----
 
 ## 1. Identified Slack API Methods and Rationale
 
